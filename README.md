@@ -17,7 +17,9 @@ git clone https://github.com/kageRaken/TradeAid.git
 **2.a. Docker**
 
 2.a.1. Install Docker from https://docs.docker.com/get-docker/
+
 2.a.2. Install Docker-compose from https://docs.docker.com/compose/
+
 2.a.3. Use the docker-compose file to build the container 
 
 **2.b. Manual install**
@@ -41,7 +43,7 @@ Then modify `config.py` and insert your API key and secret
 
 ### Docker Usage
 
-* ToDo *
+*ToDo*
 
 ### Manual Usage
 
@@ -86,4 +88,5 @@ Released under GPLv3.
 
 
 Evolved from 	: [Atnaval](https://github.com/Atnaval)/[Generic-Trailing-Stop-Loss](https://github.com/Atnaval/Generic-Trailing-Stop-Loss) 
+
 Original	: [szferguson](https://github.com/szferguson)/[Binance-Trailing-Stop-Loss](https://github.com/szferguson/Binance-Trailing-Stop-Loss)
