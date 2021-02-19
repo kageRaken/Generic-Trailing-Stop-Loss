@@ -1,16 +1,27 @@
-# Binance Trailing Stop-Loss
+#  TradeAid
+
+Crypto trading tool to make trading more efficient.
 Provides a dynamic stop-loss that automatically adjusts as the price increases or decreases (depending on mode specified)
 
 
 
 ## Installation
 
-**Clone the repository**
+### 1. Clone the repository
 ```
-git clone https://github.com/sf04/Binance-Trailing-Stop-Loss
+git clone https://github.com/kageRaken/TradeAid.git
 ```
 
-**Install required libraries**
+### 2. Fix dependencies**
+
+**2.a. Docker**
+
+2.a.1. Install Docker from https://docs.docker.com/get-docker/
+2.a.2. Install Docker-compose from https://docs.docker.com/compose/
+2.a.3. Use the docker-compose file to build the container 
+
+**2.b. Manual install**
+Install required libraries
 ```
 apt-get install python-pip -y
 pip install ccxt
@@ -28,7 +39,11 @@ Then modify `config.py` and insert your API key and secret
 
 ## Running
 
-**Usage**
+### Docker Usage
+
+* ToDo *
+
+### Manual Usage
 
 ```
 $ python main.py --help
@@ -45,15 +60,8 @@ optional arguments:
   --interval INTERVAL  How often the bot should check for price changes
 ```
 
-
-
-**Important note**
-
-If you are running in sell mode, it is assumed that you have already purchased the coins. If you are running in buy mode, it will use the total available balance in the base (USDT, BTC, etc). I will likely add an option later to specify investment ratio.
-
-
-
 ## About the bot
+
 
 **Buy mode**
 
@@ -67,7 +75,15 @@ If the **sell** option is set, the bot will initially place a stop-loss `size` s
 
 This is the amount in satoshis (or USD) you would like the stop-loss to be retained at. The difference between the current price and stop-loss will never be larger than this amount.
 
+**Important note**
+
+If you are running in sell mode, it is assumed that you have already purchased the coins. If you are running in buy mode, it will use the total available balance in the base (USDT, BTC, etc). I will likely add an option later to specify investment ratio.
+
 
 
 ## License
 Released under GPLv3.
+
+
+Evolved from 	: [Atnaval](https://github.com/Atnaval)/[Generic-Trailing-Stop-Loss](https://github.com/Atnaval/Generic-Trailing-Stop-Loss) 
+Original	: [szferguson](https://github.com/szferguson)/[Binance-Trailing-Stop-Loss](https://github.com/szferguson/Binance-Trailing-Stop-Loss)
