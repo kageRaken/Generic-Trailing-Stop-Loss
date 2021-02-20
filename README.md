@@ -12,7 +12,7 @@ Provides a dynamic stop-loss that automatically adjusts as the price increases o
 git clone https://github.com/kageRaken/TradeAid.git
 ```
 
-### 2. Fix dependencies**
+### 2. Fix dependencies
 
 **2.a. Docker**
 
@@ -23,7 +23,9 @@ git clone https://github.com/kageRaken/TradeAid.git
 2.a.3. Use the docker-compose file to build the container 
 
 **2.b. Manual install**
+
 Install required libraries
+
 ```
 apt-get install python-pip -y
 pip install ccxt
